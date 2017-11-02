@@ -12,3 +12,9 @@ class Curso(models.Model):
 
 class Vestibular(models.Model):
     nome = models.CharField(max_length=200)
+
+    
+class Candidato(models.Model):
+    nome = models.CharField(max_length=200)
+    doc = models.CharField(max_length=200)
+    curso = models.CharField(max_length=200)
